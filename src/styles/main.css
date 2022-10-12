@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* ----- VARIÁVEIS PADRÃO ----- */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+}
+
 /* ----- HEADER ----- */
 .page-header {
   display: flex;
@@ -23,15 +29,80 @@
   width: 100%;
 }
 
+/* ----- TOP SECTION ----- */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 0 80px;
+}
+
+.top-section-text {
+  margin-bottom: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section-subtitle {
+  text-transform: uppercase;
+  /* line-height: 38px; */
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.top-section-title {
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  /* line-height: 58px; */
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.top-section-description {
+  max-width: 54%;
+  line-height: 24px;
+  font-size: 16px;
+}
+
 /* ----- RESPONSIVIDADE ----- */
-@media screen and (max-width: 768px) {
-  .main-banner-desktop {
-    display: none;
-  }
+@media screen and (min-width: 2500px) {
+
 }
 
 @media screen and (min-width: 769px) {
   .main-banner-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-banner-desktop {
+    display: none;
+  }
+
+  .top-section-text {
+    max-width: 86%;
+    margin: 0 28px 64px;
+  }
+
+  .top-section-subtitle {
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  .top-section-title {
+    line-height: 34px;
+    font-size: 28px;
+  }
+
+  .top-section-description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-section-text {
+    width: 100%;
   }
 }
