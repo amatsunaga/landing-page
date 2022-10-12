@@ -16,3 +16,22 @@
 .header-logo {
   display: block;
 }
+
+/* ----- MAIN BANNER ----- */
+.main-banner {
+  display: block;
+  width: 100%;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+@media screen and (max-width: 768px) {
+  .main-banner-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main-banner-mobile {
+    display: none;
+  }
+}
