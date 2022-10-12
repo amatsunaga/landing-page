@@ -65,6 +65,46 @@ body {
   font-size: 16px;
 }
 
+.top-section-image {
+  max-width: 17%;
+  margin-bottom: 180px;
+  display: block;
+}
+
+.top-section-cards {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.top-card {
+  max-width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 26px 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+}
+
+.top-card-image {
+  /* max-width: 30%; */
+  display: block;
+  margin-bottom: 30px;
+}
+
+.top-card-image-01 {
+  /* margin-top: 16px; */
+  padding: 10px 0;
+}
+
+.top-card-description {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
 /* ----- RESPONSIVIDADE ----- */
 @media screen and (min-width: 2500px) {
 
@@ -83,7 +123,7 @@ body {
 
   .top-section-text {
     max-width: 86%;
-    margin: 0 28px 64px;
+    margin-bottom: 64px;
   }
 
   .top-section-subtitle {
@@ -97,7 +137,26 @@ body {
   }
 
   .top-section-description {
+    max-width: 100%;
     text-align: center;
+  }
+
+  .top-section-image {
+    max-width: 58%;
+    margin-bottom: 90px;
+  }
+
+  .top-section-cards {
+    max-width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .top-card {
+    max-width: 100%;
   }
 }
 
