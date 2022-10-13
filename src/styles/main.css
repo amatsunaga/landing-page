@@ -47,7 +47,7 @@ body {
 .top-section-subtitle {
   text-transform: uppercase;
   /* line-height: 38px; */
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -55,14 +55,13 @@ body {
   margin-bottom: 28px;
   text-transform: uppercase;
   /* line-height: 58px; */
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 .top-section-description {
   max-width: 54%;
-  line-height: 24px;
-  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .top-section-image {
@@ -100,8 +99,7 @@ body {
 }
 
 .top-card-description {
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -109,6 +107,7 @@ body {
 .image-grid-container {
   display: flex;
   justify-content: center;
+  /* margin: 0 auto; */
   background: #E0E0E0;
 }
 
@@ -117,14 +116,44 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+  /* margin: 0 auto;
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+  "image1 image2 image3";
+  column-gap: 40px; */
+  /* row-gap: 24px; */
+
+
   position: relative;
   top: 62px;
 }
+
+/* .grid-image-desktop {
+  max-width: 30%;
+}
+
+.grid-image-desktop-01 {
+  grid-area: image1;
+  /* justify-self: center; */
+/*}
+
+.grid-image-desktop-02 {
+  grid-area: image2;
+  /* justify-self: center; */
+/*}
+
+.grid-image-desktop-03 {
+  grid-area: image3;
+  /* justify-self: center; */
+/*} */
 
 .grid-image-desktop,
 .grid-image-mobile {
   display: block;
 }
+
 
 /* ----- LOWER SECTION ----- */
 .lower-section {
@@ -143,6 +172,7 @@ body {
   /* max-width: 92%; */
   margin: 192px 0 108px;
   grid-area: cards;
+  /* justify-self: center; */
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -167,8 +197,7 @@ body {
 
 .lower-card-description {
   padding: 0 32px;
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -182,15 +211,14 @@ body {
 
 .lower-section-subtitle {
   /* line-height: 39px; */
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
 }
 
 .lower-section-description {
   max-width: 28%;
-  line-height: 24px;
-  font-size: 16px;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -225,11 +253,134 @@ body {
   color: #BDBDBD;
 }
 
-/* ----- RESPONSIVIDADE ----- */
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* ----- TELAS GRANDES ----- */
 @media screen and (min-width: 2500px) {
 
+  /* ----- Font-size padrão ----- */
+  p {
+    font-size: 2rem;
+  }
+
+  /* ----- Header ----- */
+  .page-header {
+    padding: 100px 0;
+  }
+  
+  .header-logo {
+    transform: scale(2);
+  }
+  
+  /* ----- Top Section ----- */
+  .top-section {
+    padding: 148px 0 424px;
+  }  
+
+  .top-section-text {
+    margin-bottom: 306px;
+  }
+
+  .top-section-subtitle {
+    font-size: 4rem;
+  }
+
+  .top-section-title {
+    margin-bottom: 56px;
+    font-size: 6rem;  
+  }
+
+  .top-section-description {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  .top-section-image {
+    margin-bottom: 518px;
+    transform: scale(2);
+  }
+
+  .top-section-cards {
+    gap: 44px;
+  }
+  
+  .top-card {
+    padding: 114px 104px 94px;
+  }
+  
+  .top-card-image {
+    margin-bottom: 102px;
+    transform: scale(2);
+  }
+  
+  .top-card-image-01 {
+    padding: 20px 0;
+  }
+
+  .top-card-description {
+    line-height: 3rem;
+  }
+
+  /* ----- Image Grid ----- */
+  .image-grid-container {
+    transform: scale(2);
+  }
+
+  /* ----- Lower Section ----- */
+  .lower-section-cards {
+    margin: 714px 0 216px;
+  }
+
+  .lower-card {
+    padding: 122px 0 128px;
+    gap: 32px;
+  }
+
+  .lower-card-image {
+    margin-bottom: 84px;
+    transform: scale(2);
+  }
+
+  .lower-card-description {
+    padding: 0 64px;
+    line-height: 3rem;
+  }
+
+  .lower-section-text {
+    margin-bottom: 238px;
+  }
+
+  .lower-section-subtitle {
+    font-size: 4rem;
+  }
+
+  .lower-section-description {
+    line-height: 3rem;
+  }
+
+  .lower-section-image-desktop {
+    margin: 0 auto 370px;;
+    transform: scale(2);
+  }
+
+  /* ----- Footer ----- */
+  .page-footer {
+    padding: 80px 0;
+  }
+
+  .footer-icons {
+    gap: 44px;
+    margin-bottom: 56px;
+    transform: scale(2);
+  }
+
+  .footer-text {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+  }
 }
 
+/* ------------------------ */
 @media screen and (min-width: 769px) {
   .main-banner-mobile,
   .grid-image-mobile,
