@@ -1,0 +1,513 @@
+/* ----- RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- VARIÁVEIS PADRÃO ----- */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+}
+
+/* ----- HEADER ----- */
+.page-header {
+  display: flex;
+  justify-content: center;
+  background: #000000;
+  padding: 28px 0;
+}
+
+.header-logo {
+  display: block;
+}
+
+/* ----- MAIN BANNER ----- */
+.main-banner {
+  display: block;
+  width: 100%;
+}
+
+/* ----- TOP SECTION ----- */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 0 80px;
+}
+
+.top-section-text {
+  margin-bottom: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section-subtitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.top-section-title {
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.top-section-description {
+  max-width: 54%;
+  line-height: 1.5rem;
+}
+
+.top-section-image {
+  max-width: 17%;
+  margin-bottom: 180px;
+  display: block;
+}
+
+.top-section-cards {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.top-card {
+  max-width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 26px 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+}
+
+.top-card-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.top-card-image-01 {
+  padding: 10px 0;
+}
+
+.top-card-description {
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/* ----- IMAGE GRID ----- */
+.image-grid-container {
+  display: flex;
+  justify-content: center;
+  background: #E0E0E0;
+}
+
+.image-grid {
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  top: 62px;
+}
+
+.grid-image-desktop {
+  max-width: 30%;
+}
+
+.grid-image-desktop,
+.grid-image-mobile {
+  display: block;
+}
+
+/* ----- LOWER SECTION ----- */
+.lower-section {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-areas:
+  "cards"
+  "text"
+  "image";
+}
+
+.lower-section-cards {
+  margin: 192px 0 108px;
+  grid-area: cards;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.lower-card {
+  max-width: 22.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0 64px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.lower-card-image {
+  max-width: 24%;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.lower-card-description {
+  padding: 0 32px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.lower-section-text {
+  margin-bottom: 50px;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-section-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lower-section-description {
+  max-width: 28%;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.lower-section-image-desktop {
+  max-width: 70%;
+  grid-area: image;
+  display: block;
+  margin: 0 auto 116px;;
+}
+
+.lower-section-image-mobile {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----- FOOTER ----- */
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 0;
+  background: #000000;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.75rem;
+  font-size: 0.625rem;
+  color: #BDBDBD;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* ----- TELAS EXTRA GRANDE (XL) ----- */
+@media screen and (min-width: 2501px) {
+
+  /* ----- (XL) Font-size padrão ----- */
+  p {
+    font-size: 2rem;
+  }
+
+  /* ----- (XL) Header ----- */
+  .page-header {
+    padding: 100px 0;
+  }
+  
+  .header-logo {
+    transform: scale(2);
+  }
+  
+  /* ----- (XL) Top Section ----- */
+  .top-section {
+    padding: 148px 0 424px;
+  }  
+
+  .top-section-text {
+    margin-bottom: 306px;
+  }
+
+  .top-section-subtitle {
+    font-size: 4rem;
+  }
+
+  .top-section-title {
+    margin-bottom: 56px;
+    font-size: 6rem;  
+  }
+
+  .top-section-description {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  .top-section-image {
+    margin-bottom: 518px;
+    transform: scale(2);
+  }
+
+  .top-section-cards {
+    gap: 44px;
+  }
+  
+  .top-card {
+    padding: 114px 104px 94px;
+  }
+  
+  .top-card-image {
+    margin-bottom: 102px;
+    transform: scale(2);
+  }
+  
+  .top-card-image-01 {
+    padding: 20px 0;
+  }
+
+  .top-card-description {
+    line-height: 3rem;
+  }
+
+  /* ----- (XL) Image Grid ----- */
+  .image-grid-container {
+    padding: 382px 0 136px;
+  }
+
+  .image-grid {
+    gap: 18%;
+  }
+
+  .grid-image-desktop {
+    max-width: 15%;
+    transform: scale(2);
+  }
+
+  /* ----- (XL) Lower Section ----- */
+  .lower-section-cards {
+    margin: 714px 0 216px;
+  }
+
+  .lower-card {
+    gap: 32px;
+    padding: 122px 0 128px;
+  }
+
+  .lower-card-image {
+    margin-bottom: 84px;
+    transform: scale(2);
+  }
+
+  .lower-card-description {
+    padding: 0 64px;
+    line-height: 3rem;
+  }
+
+  .lower-section-text {
+    margin-bottom: 238px;
+  }
+
+  .lower-section-subtitle {
+    font-size: 4rem;
+  }
+
+  .lower-section-description {
+    line-height: 3rem;
+  }
+
+  .lower-section-image-desktop {
+    margin: 0 auto 370px;;
+    transform: scale(2);
+  }
+
+  /* ----- (XL) Footer ----- */
+  .page-footer {
+    padding: 80px 0;
+  }
+
+  .footer-icons {
+    gap: 44px;
+    margin-bottom: 56px;
+    transform: scale(2);
+  }
+
+  .footer-text {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* ----- LAPTOP E DESKTOP ----- */
+@media screen and (min-width: 821px) {
+  .main-banner-mobile,
+  .grid-image-mobile,
+  .lower-section-image-mobile {
+    display: none;
+  }
+}
+
+/* ----- SMARTPHONE E TABLET (S) ----- */
+@media screen and (max-width: 820px) {
+  .main-banner-desktop,
+  .grid-image-desktop,
+  .lower-section-image-desktop {
+    display: none;
+  }
+
+  /* ----- (S) Top Section ----- */
+  .top-section-text {
+    max-width: 86%;
+    margin-bottom: 64px;
+  }
+
+  .top-section-subtitle {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .top-section-title {
+    line-height: 2.125rem;
+    font-size: 1.75rem;
+  }
+
+  .top-section-description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .top-section-image {
+    max-width: 58%;
+    margin-bottom: 90px;
+  }
+
+  .top-section-cards {
+    max-width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .top-card {
+    max-width: 100%;
+  }
+
+  /* ----- (S) Image Grid ----- */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "image1 image2"
+    "image3 image3";
+    column-gap: 14px;
+    row-gap: 24px;
+    top: 32px;
+  }
+
+  .grid-image-mobile {
+    max-width: 100%;
+  }
+
+  .grid-image-mobile-01 {
+    grid-area: image1;
+  }
+
+  .grid-image-mobile-02 {
+    grid-area: image2;
+  }
+
+  .grid-image-mobile-03 {
+    grid-area: image3;
+  }
+
+  /* ----- (S) Lower Section ----- */
+  .lower-section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas:
+    "cards"
+    "image"
+    "text";
+  }
+
+  .lower-section-cards {
+    margin: 112px 0 98px;
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lower-card {
+    max-width: 88%;
+  }
+
+  .lower-card-image {
+    max-width: 28%;
+  }
+
+  .lower-card-description {
+    font-size: 0.875rem;
+  }
+
+  .lower-section-text {
+    margin-bottom: 88px;
+  }
+
+  .lower-section-subtitle {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .lower-section-description {
+    max-width: 84%;
+  }
+
+  .lower-section-image-mobile {
+    grid-area: image;
+    margin-bottom: 50px;
+  }
+
+  /* ----- (S) Footer ----- */
+  .page-footer {
+    padding: 32px 0;
+  }
+
+  .footer-text {
+    max-width: 64%;
+  }
+}
+
+/* ----- TELA EXTRA PEQUENA ----- */
+@media screen and (max-width: 320px) {
+  .top-section-text {
+    width: 100%;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
