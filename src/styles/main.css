@@ -46,7 +46,6 @@ body {
 
 .top-section-subtitle {
   text-transform: uppercase;
-  /* line-height: 38px; */
   font-size: 2rem;
   font-weight: 400;
 }
@@ -54,7 +53,6 @@ body {
 .top-section-title {
   margin-bottom: 28px;
   text-transform: uppercase;
-  /* line-height: 58px; */
   font-size: 3rem;
   font-weight: 500;
 }
@@ -88,13 +86,11 @@ body {
 }
 
 .top-card-image {
-  /* max-width: 30%; */
   display: block;
   margin-bottom: 30px;
 }
 
 .top-card-image-01 {
-  /* margin-top: 16px; */
   padding: 10px 0;
 }
 
@@ -107,7 +103,6 @@ body {
 .image-grid-container {
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
   background: #E0E0E0;
 }
 
@@ -116,44 +111,18 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  /* margin: 0 auto;
-  width: 92%;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-areas:
-  "image1 image2 image3";
-  column-gap: 40px; */
-  /* row-gap: 24px; */
-
-
   position: relative;
   top: 62px;
 }
 
-/* .grid-image-desktop {
+.grid-image-desktop {
   max-width: 30%;
 }
-
-.grid-image-desktop-01 {
-  grid-area: image1;
-  /* justify-self: center; */
-/*}
-
-.grid-image-desktop-02 {
-  grid-area: image2;
-  /* justify-self: center; */
-/*}
-
-.grid-image-desktop-03 {
-  grid-area: image3;
-  /* justify-self: center; */
-/*} */
 
 .grid-image-desktop,
 .grid-image-mobile {
   display: block;
 }
-
 
 /* ----- LOWER SECTION ----- */
 .lower-section {
@@ -163,16 +132,11 @@ body {
   "cards"
   "text"
   "image";
-  /* column-gap: 14px;
-  row-gap: 24px;
-  top: 32px; */
 }
 
 .lower-section-cards {
-  /* max-width: 92%; */
   margin: 192px 0 108px;
   grid-area: cards;
-  /* justify-self: center; */
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -210,7 +174,6 @@ body {
 }
 
 .lower-section-subtitle {
-  /* line-height: 39px; */
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -224,9 +187,15 @@ body {
 
 .lower-section-image-desktop {
   max-width: 70%;
-  margin: 0 auto 116px;;
   grid-area: image;
   display: block;
+  margin: 0 auto 116px;;
+}
+
+.lower-section-image-mobile {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ----- FOOTER ----- */
@@ -248,22 +217,22 @@ body {
 .footer-text {
   text-align: center;
   text-transform: uppercase;
-  line-height: 12px;
-  font-size: 10px;
+  line-height: 0.75rem;
+  font-size: 0.625rem;
   color: #BDBDBD;
 }
 
 /* ---------- RESPONSIVIDADE ---------- */
 
-/* ----- TELAS GRANDES ----- */
-@media screen and (min-width: 2500px) {
+/* ----- TELAS EXTRA GRANDE (XL) ----- */
+@media screen and (min-width: 2501px) {
 
-  /* ----- Font-size padrão ----- */
+  /* ----- (XL) Font-size padrão ----- */
   p {
     font-size: 2rem;
   }
 
-  /* ----- Header ----- */
+  /* ----- (XL) Header ----- */
   .page-header {
     padding: 100px 0;
   }
@@ -272,7 +241,7 @@ body {
     transform: scale(2);
   }
   
-  /* ----- Top Section ----- */
+  /* ----- (XL) Top Section ----- */
   .top-section {
     padding: 148px 0 424px;
   }  
@@ -321,19 +290,28 @@ body {
     line-height: 3rem;
   }
 
-  /* ----- Image Grid ----- */
+  /* ----- (XL) Image Grid ----- */
   .image-grid-container {
+    padding: 382px 0 136px;
+  }
+
+  .image-grid {
+    gap: 18%;
+  }
+
+  .grid-image-desktop {
+    max-width: 15%;
     transform: scale(2);
   }
 
-  /* ----- Lower Section ----- */
+  /* ----- (XL) Lower Section ----- */
   .lower-section-cards {
     margin: 714px 0 216px;
   }
 
   .lower-card {
-    padding: 122px 0 128px;
     gap: 32px;
+    padding: 122px 0 128px;
   }
 
   .lower-card-image {
@@ -363,7 +341,7 @@ body {
     transform: scale(2);
   }
 
-  /* ----- Footer ----- */
+  /* ----- (XL) Footer ----- */
   .page-footer {
     padding: 80px 0;
   }
@@ -380,8 +358,8 @@ body {
   }
 }
 
-/* ------------------------ */
-@media screen and (min-width: 769px) {
+/* ----- LAPTOP E DESKTOP ----- */
+@media screen and (min-width: 821px) {
   .main-banner-mobile,
   .grid-image-mobile,
   .lower-section-image-mobile {
@@ -389,58 +367,28 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1919px) {
-  .image-grid {
-    /* width: 100%; */
-    /* margin: 0 24px; */
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas:
-    "imagem1 imagem2"
-    "imagem3 imagem3";
-    column-gap: 14px;
-    row-gap: 24px;
-    top: 32px;
-    background: #E0E0E0;
-  }
-
-  .grid-image-desktop {
-    max-width: 100%;
-  }
-
-  .grid-image-desktop-01 {
-    grid-area: imagem1;
-  }
-
-  .grid-image-desktop-02 {
-    grid-area: imagem2;
-  }
-
-  .grid-image-desktop-03 {
-    grid-area: imagem3;
-  }
-}
-
-@media screen and (max-width: 768px) {
+/* ----- SMARTPHONE E TABLET (S) ----- */
+@media screen and (max-width: 820px) {
   .main-banner-desktop,
   .grid-image-desktop,
   .lower-section-image-desktop {
     display: none;
   }
 
+  /* ----- (S) Top Section ----- */
   .top-section-text {
     max-width: 86%;
     margin-bottom: 64px;
   }
 
   .top-section-subtitle {
-    line-height: 24px;
-    font-size: 20px;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .top-section-title {
-    line-height: 34px;
-    font-size: 28px;
+    line-height: 2.125rem;
+    font-size: 1.75rem;
   }
 
   .top-section-description {
@@ -466,18 +414,16 @@ body {
     max-width: 100%;
   }
 
+  /* ----- (S) Image Grid ----- */
   .image-grid {
-    /* width: 100%; */
-    /* margin: 0 24px; */
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-areas:
-    "imagem1 imagem2"
-    "imagem3 imagem3";
+    "image1 image2"
+    "image3 image3";
     column-gap: 14px;
     row-gap: 24px;
     top: 32px;
-    background: #E0E0E0;
   }
 
   .grid-image-mobile {
@@ -485,17 +431,18 @@ body {
   }
 
   .grid-image-mobile-01 {
-    grid-area: imagem1;
+    grid-area: image1;
   }
 
   .grid-image-mobile-02 {
-    grid-area: imagem2;
+    grid-area: image2;
   }
 
   .grid-image-mobile-03 {
-    grid-area: imagem3;
+    grid-area: image3;
   }
 
+  /* ----- (S) Lower Section ----- */
   .lower-section {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -503,9 +450,6 @@ body {
     "cards"
     "image"
     "text";
-    /* column-gap: 14px;
-    row-gap: 24px;
-    top: 32px; */
   }
 
   .lower-section-cards {
@@ -514,7 +458,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
   }
 
   .lower-card {
@@ -526,7 +469,7 @@ body {
   }
 
   .lower-card-description {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .lower-section-text {
@@ -534,7 +477,6 @@ body {
   }
 
   .lower-section-subtitle {
-    /* line-height: 29px; */
     margin-bottom: 8px;
     font-size: 24px;
   }
@@ -544,11 +486,11 @@ body {
   }
 
   .lower-section-image-mobile {
-    margin-bottom: 50px;
     grid-area: image;
-    display: block;
+    margin-bottom: 50px;
   }
 
+  /* ----- (S) Footer ----- */
   .page-footer {
     padding: 32px 0;
   }
@@ -558,8 +500,14 @@ body {
   }
 }
 
+/* ----- TELA EXTRA PEQUENA ----- */
 @media screen and (max-width: 320px) {
   .top-section-text {
     width: 100%;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-direction: column;
   }
 }
